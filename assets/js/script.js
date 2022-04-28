@@ -1,2 +1,2 @@
-var dateToday = moment().format('MMMM Do YYYY, h:mm:ss a');
+var dateToday = moment().format('dddd, MMMM Do');
 $('#currentDay').html(dateToday);
