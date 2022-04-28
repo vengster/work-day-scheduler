@@ -24,4 +24,17 @@ $(".time-block").each(function(){
         $(this).addClass("future");
         $(this).removeClass("past");
     }
-})
+});
+
+
+var saveTask = function(){
+    var time =
+    var text =
+    localStorage.setItem(time, text);
+}
+
+
+// save button click listener
+$("button").on("click", function(){
+    saveTask();
+});
