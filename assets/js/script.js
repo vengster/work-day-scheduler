@@ -25,24 +25,21 @@ $(".time-block").each(function(){
         $(this).removeClass("past");
     }
 });
-<<<<<<< HEAD
-// need to work on
-$('saveBtn').on('click', function(){
-    var text = $('.description');
-    localStorage.setItem(text);
-})
-=======
+// // need to work on
+// $('saveBtn').on('click', function(){
+//     var text = $('.description');
+//     localStorage.setItem(text);
+// })
 
 
-var saveTask = function(){
-    var time =
-    var text =
-    localStorage.setItem(time, text);
-}
+// var saveTask = function(){
+//     var time =
+//     var text =
+//     localStorage.setItem(time, text);
+// }
 
 
 // save button click listener
 $("button").on("click", function(){
     saveTask();
 });
->>>>>>> 48c8c7db3ffef7b42b60ec52c16557bbef948456
