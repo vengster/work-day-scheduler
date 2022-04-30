@@ -25,21 +25,22 @@ $(".time-block").each(function(){
         $(this).removeClass("past");
     }
 });
-// // need to work on
-// $('saveBtn').on('click', function(){
-//     var text = $('.description');
-//     localStorage.setItem(text);
-// })
 
 
-// var saveTask = function(){
-//     var time =
-//     var text =
-//     localStorage.setItem(time, text);
-// }
+// function to save user input task
+
+ var saveTask = function(){
+    var time = $('.time-block').attr("id");
+    console.log(time);
+    var text = $('.description').val();
+    console.log(text);
+    localStorage.setItem(time, text);
+ };
 
 
 // save button click listener
 $("button").on("click", function(){
+    console.log("button clicked");
     saveTask();
 });
+
