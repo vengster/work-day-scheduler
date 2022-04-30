@@ -7,7 +7,7 @@ var time = moment().hour();
 console.log(time);
 $(".time-block").each(function(){
     console.log(this);
-    var timeBlock = $(this).attr("id");
+    var timeBlock = parseInt($(this).attr("id").split("-"));
     console.log(timeBlock);
     if(timeBlock === time){
         $(this).addClass("present");
@@ -24,4 +24,9 @@ $(".time-block").each(function(){
         $(this).addClass("future");
         $(this).removeClass("past");
     }
+});
+// need to work on
+$('saveBtn').on('click', function(){
+    var text = $('.description');
+    localStorage.setItem(text);
 })
