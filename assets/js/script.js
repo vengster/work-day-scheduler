@@ -3,28 +3,29 @@ $('#currentDay').html(dateToday);
 
 
 // loop through each hour and determine class for each timeBlock
-var time = moment().hour();
+var time = moment().hours();
 console.log(time);
 $(".time-block").each(function(){
-    console.log(this);
-    var timeBlock = parseInt($(this).attr("id").split("-"));
-    console.log(timeBlock);
+    //console.log(this);
+    var timeBlock = parseInt($(this).attr("id"));
+    //console.log(timeBlock);
     if(timeBlock === time){
         $(this).addClass("present");
-        $(this).removeClass("future");
-        $(this).removeClass("past");
+        // $(this).removeClass("future");
+        // $(this).removeClass("past");
     }
     else if(timeBlock < time){
-        $(this).removeClass("present");
-        $(this).removeClass("future");
+        //$(this).removeClass("present");
+        //$(this).removeClass("future");
         $(this).addClass("past");
     }
     else{
-        $(this).removeClass("present");
+        //$(this).removeClass("present");
         $(this).addClass("future");
-        $(this).removeClass("past");
+        //$(this).removeClass("past");
     }
 });
+
 
 
 // function to save user input task
